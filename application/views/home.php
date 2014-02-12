@@ -9,7 +9,7 @@
 
 <div id="container">
 	<?php if(!count($emails)): ?>
-		<h1><?php echo $user ?> have not sent any emails, click on Mail Button to send emails</h1>
+		<p class="lead"><?php echo $user ?> have not sent any emails, click on Mail Button to send emails</p>
 	<?php else:  ?>
 		<?php echo json_encode($emails) ?>
 	<?php endif; ?>
